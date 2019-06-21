@@ -1,4 +1,4 @@
-package com.mkr.sample;
+package com.mkr.sample.ds;
 
 public class MyQueue {
 

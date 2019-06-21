@@ -1,6 +1,5 @@
-package com.mkr.sample;
+package com.mkr.sample.ds;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MyStack<T> {
