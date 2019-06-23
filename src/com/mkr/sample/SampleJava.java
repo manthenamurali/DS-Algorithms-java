@@ -1,26 +1,33 @@
 package com.mkr.sample;
 
+import com.mkr.sample.ds.MyLinkedList;
 import com.mkr.sample.ds.MyQueue;
 import com.mkr.sample.generics.DownloadTask;
 import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
+
+import java.util.LinkedList;
 
 public class SampleJava {
 
     public static void main(String[] args) {
         System.out.println("Hello, Murali!!!");
 
-        /*MyQueue q = new MyQueue();
+        MyLinkedList<String> linkedList = new MyLinkedList<>();
+        linkedList.insert("Hello");
+        linkedList.insert("Murali");
+        linkedList.insert("How");
+        linkedList.insert("are");
+        linkedList.insert("you?");
 
-        for(int i=1; i<= 15; i++) {
-            q.push(i + 200);
-        }
+        //linkedList.insert(4, "middle");
 
-        for(int i=1; i<=20 ; i++) {
-            System.out.println(q.pop());
-        }*/
+        linkedList.remove(2);
 
-        genericSample();
+        linkedList.print();
+
+
+        //genericsample();
     }
 
     private static void genericSample() {
