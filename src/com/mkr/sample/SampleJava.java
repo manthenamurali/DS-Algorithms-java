@@ -5,6 +5,7 @@ import com.mkr.sample.ds.MyQueue;
 import com.mkr.sample.generics.DownloadTask;
 import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
+import com.mkr.sample.searching.BinarySearch;
 import com.mkr.sample.searching.LinearSearch;
 
 import java.util.LinkedList;
@@ -17,13 +18,15 @@ public class SampleJava {
 
        // Examples.getTagContent("<>hello</>");
 
-        int[] arr = new int[100];
-        Random random = new Random();
-        for(int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100);
-        }
+        int[] arr = new int[10];
 
-        System.out.println(LinearSearch.getIndexForItem(arr, 25));
+        /*for(int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }*/
+
+        arr = new int[] {3, 7, 14, 20, 29, 30, 45, 63, 78, 85, 99};
+
+        System.out.println(BinarySearch.findIndex(arr, 30));
     }
 
     private static void genericSample() {

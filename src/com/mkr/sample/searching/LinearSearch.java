@@ -4,7 +4,9 @@ import java.util.Random;
 
 /**
  * Not effective way of searching the index but commonly used.
- * Array is not sorted. (If we know array is sorted use binary search)
+ * Array is not sorted. (If we know array is sorted use binary search).
+ *
+ * Logic : Iterate through all the item to find the index
  *
  * Best case : O(1)
  * Worst case : O(n)
