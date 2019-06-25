@@ -5,29 +5,25 @@ import com.mkr.sample.ds.MyQueue;
 import com.mkr.sample.generics.DownloadTask;
 import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
+import com.mkr.sample.searching.LinearSearch;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 public class SampleJava {
 
     public static void main(String[] args) {
         System.out.println("Hello, Murali!!!");
 
-        MyLinkedList<String> linkedList = new MyLinkedList<>();
-        linkedList.insert("Hello");
-        linkedList.insert("Murali");
-        linkedList.insert("How");
-        linkedList.insert("are");
-        linkedList.insert("you?");
+       // Examples.getTagContent("<>hello</>");
 
-        //linkedList.insert(4, "middle");
+        int[] arr = new int[100];
+        Random random = new Random();
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100);
+        }
 
-        linkedList.remove(2);
-
-        linkedList.print();
-
-
-        //genericsample();
+        System.out.println(LinearSearch.getIndexForItem(arr, 25));
     }
 
     private static void genericSample() {
