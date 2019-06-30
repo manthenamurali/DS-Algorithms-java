@@ -8,6 +8,9 @@ import com.mkr.sample.Util;
  * Step 3 : Repeat step 1 from 1st index
  *
  * Repeat till end of the array
+ *
+ * Best case : 0(n2)
+ * Worst case : 0(n2)
  */
 public class SelectionSort {
 
