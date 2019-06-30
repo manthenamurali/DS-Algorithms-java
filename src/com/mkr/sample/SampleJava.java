@@ -7,6 +7,7 @@ import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
 import com.mkr.sample.searching.BinarySearch;
 import com.mkr.sample.searching.LinearSearch;
+import com.mkr.sample.sorting.SelectionSort;
 
 import java.util.LinkedList;
 import java.util.Random;
@@ -18,15 +19,30 @@ public class SampleJava {
 
        // Examples.getTagContent("<>hello</>");
 
-        int[] arr = new int[10];
+        int[] arr = new int[50];
+        Random random = new Random();
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(1000);
+        }
 
-        /*for(int i = 0; i < arr.length; i++) {
-            arr[i] = i;
-        }*/
+        System.out.println();
+        System.out.println("Before sorting...");
+        printArr(arr);
+        System.out.println();
 
-        arr = new int[] {3, 7, 14, 20, 29, 30, 45, 63, 78, 85, 99};
 
-        System.out.println(BinarySearch.findIndex(arr, 30));
+        SelectionSort selectionSort = new SelectionSort();
+        selectionSort.sort(arr);
+
+        System.out.println();
+        System.out.println("After sorting...");
+        printArr(arr);
+    }
+
+    private static void printArr(int[] arr) {
+        for(int i : arr) {
+            System.out.print(i + " ");
+        }
     }
 
     private static void genericSample() {
