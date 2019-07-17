@@ -1,16 +1,10 @@
 package com.mkr.sample;
 
-import com.mkr.sample.ds.MyLinkedList;
-import com.mkr.sample.ds.MyQueue;
 import com.mkr.sample.generics.DownloadTask;
 import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
-import com.mkr.sample.searching.BinarySearch;
-import com.mkr.sample.searching.LinearSearch;
-import com.mkr.sample.sorting.InsertionSort;
-import com.mkr.sample.sorting.SelectionSort;
+import com.mkr.sample.sorting.MergeSort;
 
-import java.util.LinkedList;
 import java.util.Random;
 
 public class SampleJava {
@@ -20,7 +14,7 @@ public class SampleJava {
 
        // Examples.getTagContent("<>hello</>");
 
-        int[] arr = new int[10];
+        int[] arr = new int[100];
         Random random = new Random();
         for(int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(1000);
@@ -31,13 +25,12 @@ public class SampleJava {
         printArr(arr);
         System.out.println();
 
-
-        InsertionSort insertionSort = new InsertionSort();
-        insertionSort.sort1(arr);
+        MergeSort.sort(arr, 0, arr.length - 1);
 
         System.out.println();
         System.out.println("After sorting...");
         printArr(arr);
+
     }
 
     public static void printArr(int[] arr) {
