@@ -3,8 +3,7 @@ package com.mkr.sample;
 import com.mkr.sample.generics.DownloadTask;
 import com.mkr.sample.generics.Task;
 import com.mkr.sample.generics.TaskExecutor;
-import com.mkr.sample.sorting.BubbleSort;
-import com.mkr.sample.sorting.MergeSort;
+import com.mkr.sample.sorting.QuickSort;
 
 import java.util.Random;
 
@@ -26,7 +25,7 @@ public class SampleJava {
         printArr(arr);
         System.out.println();
 
-        BubbleSort.sort(arr);
+        QuickSort.sort(arr, 0, arr.length - 1);
 
         System.out.println();
         System.out.println("After sorting...");
