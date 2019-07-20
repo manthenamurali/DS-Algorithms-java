@@ -8,7 +8,7 @@ import com.mkr.sample.Util;
  *
  * 1. Always pick first element as pivot.
  * 2. Always pick last element as pivot (implemented below)
- * 3. Pick a random element as pivot.
+ * 3. Pick a random element as pivot. (this requires additional processing, so not recommended to use)
  * 4. Pick median as pivot.
  *
  * The key process in quickSort is partition().
