@@ -1,6 +1,6 @@
 Data structures and algorithms practise 
 
-### Searching 
+## Searching 
 
 1. **Linear Search**  
 Iterate through all the elements to find the index of search element.
@@ -20,7 +20,7 @@ For binary search to work the input array has to be already sorted.
 | Binary Search   | Ω(1)        | O(log(n))  |
 
 
-### Sorting : 
+## Sorting   
 
 1. **Selection Sort**  
 Select the smallest value in the array and place it at 0th index. Then, select the second smallest 
@@ -71,4 +71,5 @@ But merge sort is also efficient where memory is not a constraint.
    
 ### Useful Links     
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html  
-https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/  
+https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity    
+https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/   
