@@ -1,18 +1,17 @@
-# DS-Algorithms-java
-Data structures and algorithms practise repo
+Data structures and algorithms practise 
 
 ### Searching 
 
-1. Linear Search  
+1. **Linear Search**  
 Iterate through all the elements to find the index of search element.
 
-2. Binary Search  
+2. **Binary Search**  
 First pick the center of the array. Check if the search element is less than or grater than to the
 center element. If less than the center then pick array to left of the center ie.. start..mid - 1 and repeat the same process
 until the element is found. If greater than the center then pick array to right of the center ie.. mid + 1..end 
 For binary search to work the input array has to be already sorted.   
 
-#####Time Complexity
+##### Time Complexity
 
 
 |    Algorithm    |   Best      |    Worst   |
@@ -23,24 +22,24 @@ For binary search to work the input array has to be already sorted.
 
 ### Sorting : 
 
-1. Selection Sort  
+1. **Selection Sort**  
 Select the smallest value in the array and place it at 0th index. Then, select the second smallest 
 value and place at 1st index. Repeat till the end of array.  
         
-2. Binary Sort  
+2. **Binary Sort**  
 Pick the element and compare with elements to its left and place the picked value in its correct position.
 So, basically we start creating a sorted array at the beginning of the main array and grow it.
 
-3. Bubble Sort   
+3. **Bubble Sort**   
 This works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-4. Merge Sort  
+4. **Merge Sort**  
 Merge Sort is a Divide and Conquer algorithm. It divides the input array in two halves, calls itself for the two halves 
 until single element. Then the nodes are merged from bottom to top.   
 Check below link for better understanding,  
 https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif
 
-5. Quick Sort  
+5. **Quick Sort**  
 Like Merge Sort, QuickSort is also a Divide and Conquer algorithm. It picks an element as pivot and partitions the given
 array around the picked pivot. The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot,
 put x at its correct position in sorted array and put all smaller elements (smaller than x) before x,
@@ -70,8 +69,6 @@ But merge sort is also efficient where memory is not a constraint.
  
   
    
-##### Useful Links :
-
+### Useful Links     
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html  
-
 https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/  
